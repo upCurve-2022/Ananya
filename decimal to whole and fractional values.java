@@ -1,12 +1,13 @@
 import java.util.*;
   public class WholeFractional {
   public static void main(String[] args) {
-  double value = 10.25;
-  double fractional_part = value % 1;
-  double integral_part = value - fractional_part;  
-  System.out.print("\nOriginal value: "+value);
-  System.out.print("\nIntegral part: "+integral_part);
-  System.out.print("\nFractional part: "+fractional_part);
+  Scanner sc1=new Scanner(System.in);
+  System.out.print("Enter value:");
+  double value = sc1.nextDouble();
+  String s=String.valueOf(value);
+  int i=s.indexOf(".");
+  System.out.print("\nIntegral part: "+s.substring(0,i));
+  System.out.print("\nafter part: "+s.substring(i+1));
   System.out.println();  
   }
 }

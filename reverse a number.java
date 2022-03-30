@@ -1,3 +1,8 @@
+/*Write a program to reverse the number.
+Input: 1234567890
+Output: 0987654321
+   */
+
 import java.util.Scanner;
 class ReversingaNumber {
    

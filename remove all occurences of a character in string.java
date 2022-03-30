@@ -6,11 +6,11 @@ import java.util.List;
 
 class Test
 {
-	static String remVowel(String str)
+	static String remCh(String str)
 	{
-		Character vowels[] = {'t', 'T'};
+		Character ch[] = {'t', 'T'};
 		
-		List<Character> al = Arrays.asList(vowels);
+		List<Character> al = Arrays.asList(ch);
 		
 		StringBuffer sb = new StringBuffer(str);
 		
@@ -30,6 +30,6 @@ class Test
 	{
 		String str = "To test this string";
 		
-		System.out.println(remVowel(str));
+		System.out.println(remCh(str));
 	}
 }
